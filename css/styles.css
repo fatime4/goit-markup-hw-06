@@ -533,6 +533,56 @@ img {
   background-color: var(--accent-color);
 }
 
+.subscribe-form {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 93px;
+  margin-right: auto;
+}
+
+.form-title {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.form-input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding: 15px 16px;
+  background-color: #2f303a;
+  color: rgba(255, 255, 255, 0.6);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.subscribe-btn {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  border-color: transparent;
+}
+
+.btn-txt {
+  margin-right: 10px;
+}
+
+.subscribe-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
 /* Модальне вікно */
 
 .backdrop {
@@ -562,6 +612,7 @@ img {
   transform: translate(-50%, -50%);
   width: 528px;
   height: 521px;
+  padding: 40px 0;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -582,6 +633,76 @@ img {
   padding: 0;
   background-color: #ffffff;
   cursor: pointer;
+}
+
+.close-btn {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover .close-btn,
+.modal-close-btn:focus .close-btn {
+  fill: var(--accent-color);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+  color: var(--title-text-color);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 448px;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.modal-form-input {
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.modal-form-input {
+  position: relative;
+  height: 40px;
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+}
+
+.modal-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(30%, 30%);
+}
+
+.send-btn {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.send-btn:hover,
+.send-btn:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--accent-hover-color);
 }
 
 /* Стили для портфолио */
